@@ -1074,7 +1074,7 @@ case $PLATFORM in
         braindead=no
         case "x`uname -r`" in
 changequote(, )dnl
-            x2.[23456789]* ) ;;
+            x2.[23456789]* | x3.[0-9]* ) ;;
 changequote([, ])
             * ) braindead=yes ;;
         esac
