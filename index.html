@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Pth by Distrotech</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Pth</h1>
+          <h2></h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Distrotech/pth/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Distrotech/pth/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Distrotech/pth" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <hr><p>|  _ | |_| |__
+  | |_) | <strong>| '_ \                    ``Only those who attempt
+  |  __/| |_| | | |                     the absurd can achieve
+  |_|    \</strong>|_| |_|                     the impossible.''</p>
+
+<p>GNU Pth - The GNU Portable Threads
+  Version 2.0.7 (08-Jun-2006)</p>
+
+<p>ABSTRACT</p>
+
+<p>Pth is a very portable POSIX/ANSI-C based library for Unix platforms
+  which provides non-preemptive priority-based scheduling for multiple
+  threads of execution (aka `multithreading') inside event-driven
+  applications. All threads run in the same address space of the server
+  application, but each thread has its own individual program-counter,
+  run-time stack, signal mask and errno variable.</p>
+
+<p>The thread scheduling itself is done in a cooperative way, i.e., the
+  threads are managed by a priority- and event-based non-preemptive
+  scheduler. The intention is, that this way one can achieve better
+  portability and run-time performance than with preemptive scheduling.
+  The event facility allows threads to wait until various types of
+  events occur, including pending I/O on filedescriptors, asynchronous
+  signals, elapsed timers, pending I/O on message ports, thread and
+  process termination, and even customized callback functions.</p>
+
+<p>Additionally Pth provides an optional emulation API for POSIX.1c
+  threads (`Pthreads') which can be used for backward compatibility to
+  existing multithreaded applications.</p>
+
+<p>Finally, Pth guarranties its fixed set of API functionality on
+  all platforms, i.e., functions like pth_poll(3), pth_readv(3) or
+  pth_writev(3) are always available, even if the particular underlaying
+  platform does not actually support their functionality (through the
+  system calls poll(2), readv(2), writev(2), etc).</p>
+
+<p>Although Pth is very feature-rich, it is a rather small threading
+  library. It consists only of approximately 7,000 line (or 300 KB) of
+  ANSI C code which are auto-configured with approximately 400 lines (or
+  60 KB) of Autoconf/m4 macros and which are documented by approximately
+  3,000 lines (or 150 KB) of documentation. Additionally the sources
+  are documented with approximately 3,600 additional lines of comments.
+  As a result, the whole source tree is just about 1.5 MB in size and
+  fits into a small tarball less than 350 KB in size. This allows Pth to
+  fit very well even into the source tree of other applications without
+  bloating it up very much.</p>
+
+<p>Pth was successfully tested on FreeBSD, NetBSD, OpenBSD, BSDI,
+  GNU/Linux, Solaris, HPUX, Tru64 (OSF/1), AIX, IRIX, UnixWare, SCO
+  OpenServer, SINIX, ReliantUNIX, ISC, AmigaOS, Rhapsody (MacOS X), FTX,
+  AUX and Win32/Cygwin. And it should should automatically adjust itself
+  to remaining Unix platforms, too.</p>
+
+<p>COPYRIGHT AND LICENSE</p>
+
+<p>Copyright (c) 1999-2006 Ralf S. Engelschall <a href="mailto:rse@engelschall.com">rse@engelschall.com</a></p>
+
+<p>This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.</p>
+
+<p>This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  Lesser General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU Lesser General Public
+  License along with this library (see file COPYING); if not, write
+  to the Free Software Foundation, Inc., 59 Temple Place, Suite
+  330, Boston, MA 02111-1307 USA, or contact Ralf S. Engelschall
+  <a href="mailto:rse@engelschall.com">rse@engelschall.com</a>.</p>
+
+<p>HOME AND DOCUMENTATION</p>
+
+<p>The documentation and latest release can be found on</p>
+
+<p>o OSSP: <a href="http://www.ossp.org/pkg/lib/pth/">http://www.ossp.org/pkg/lib/pth/</a>
+  o OSSP:  <a>ftp://ftp.ossp.org/pkg/lib/pth/</a>
+  o GNU:  <a href="http://www.gnu.org/software/pth/">http://www.gnu.org/software/pth/</a>
+  o GNU:   <a>ftp://ftp.gnu.org/gnu/pth/</a></p>
+
+<pre><code>                                   Ralf S. Engelschall
+                                   rse@engelschall.com
+                                   www.engelschall.com
+</code></pre>
+        </section>
+
+        <footer>
+          Pth is maintained by <a href="https://github.com/Distrotech">Distrotech</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
